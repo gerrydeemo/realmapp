@@ -4,5 +4,5 @@
 <div style="display:inline">
 <img src="https://user-images.githubusercontent.com/75184455/190915631-bf9f812f-d468-4d1d-9a7d-f65e324a18b8.png" width="200" />
 <img src="https://user-images.githubusercontent.com/75184455/190915716-9077681a-9af1-4f22-a824-dad860a19a86.png" width="200" />
-</div>
 <img src="https://user-images.githubusercontent.com/75184455/190916650-cea90808-7eb5-4505-9470-1efe05261193.png" width="200" />
+</div>
