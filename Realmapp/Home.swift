@@ -16,20 +16,20 @@ struct Home: View {
                 Color.black
                 VStack {
                     ZStack {
-                    
-                        Rectangle().frame(width: 1000, height: 100).foregroundColor(.red).offset(y:-365)
-                        Text("IDK Name").multilineTextAlignment(.center).offset(y:-340).foregroundColor(.white).font(.largeTitle).bold()
+                        Button {
+                            signOut()
+                            isActive = true
+                        } label: {
+                            Image("doorexit").resizable().frame(width: 80, height: 80)
+                        }.offset(x:-150,y:-338)
+                        Text("Realm App").multilineTextAlignment(.center).offset(y:-340).foregroundColor(.white).font(.title2).bold()
+                        Rectangle().frame(width: 1000, height: 0.5).foregroundColor(.gray).offset(y:-310)
                     }
                     
                     NavigationLink(destination: signIn(), isActive: $isActive) {
                         
                     }
-                    Button {
-                        signOut()
-                        isActive = true
-                    } label: {
-                        Text("logout").foregroundColor(.blue)
-                    }
+                   
                     
                 }.navigationBarBackButtonHidden(true)
                 
@@ -50,15 +50,5 @@ struct Home_Previews: PreviewProvider {
         Home()
     }
 }
-struct Triangle: Shape {
-    func path(in rect: CGRect) -> Path {
-        var path = Path()
 
-        path.move(to: CGPoint(x: rect.midX, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY))
-        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
-        path.addLine(to: CGPoint(x: rect.midX, y: rect.minY))
 
-        return path
-    }
-}
